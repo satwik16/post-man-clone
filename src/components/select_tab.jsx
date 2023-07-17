@@ -2,7 +2,7 @@ import { Box, Tab, Tabs } from "@mui/material";
 import { useState, useContext } from "react";
 import { DataContext } from "../context/dataprovider";
 import "./select_tab.css";
-import Create_table from "./create_table";
+import CREATE_TABLE from "./create_table";
 import CreateJsonText from "./createjsontext";
 const Select_Tab = () => {
   const [value, setValue] = useState(0);
@@ -26,7 +26,7 @@ const Select_Tab = () => {
         id={`simple-tabpanel-${0}`}
         aria-labelledby={`simple-tab-${0}`}
       >
-        <Create_table
+        <CREATE_TABLE         //HERE
           text={"query params"}
           data={paramdata}
           setdata={setparamdata}
@@ -38,7 +38,7 @@ const Select_Tab = () => {
         id={`simple-tabpanel-${1}`}
         aria-labelledby={`simple-tab-${1}`}
       >
-        <Create_table
+        <CREATE_TABLE    // HERE
           text={"headers"}
           data={headerdata}
           setdata={setheaderdata}

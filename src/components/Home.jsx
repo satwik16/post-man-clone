@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { DataContext } from "../context/dataprovider";
 import { Box } from "@mui/material";
-import Select_tab from "./select_tab";
+import SELECT_TAB from "./select_tab";
 import Form from "./Form";
 import Header from "./Header";
 import "./home.css";
@@ -40,7 +40,7 @@ const Home = () => {
       <Header />
       <Box className="form-wrapper">
         <Form onsendclick={onsendclick} />
-        <Select_tab />
+        <SELECT_TAB />
         {/* <Response/> */}
         {/* <ErrorScreen /> */}
         {errorresponse ? <ErrorScreen/> : <Response data = {apiresponse}/>}

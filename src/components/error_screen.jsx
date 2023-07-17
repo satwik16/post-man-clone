@@ -1,4 +1,4 @@
-import { Typography, TextareaAutosize, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import "./error_screen.css";
 const ErrorScreen = () => {
   const error = "https://i.stack.imgur.com/01tZQ.png";
